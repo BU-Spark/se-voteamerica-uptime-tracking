@@ -1,15 +1,19 @@
 <template>
-  <BaseMap />
+<div>
+    <BaseMap />
+    <HomeTable />
+</div>
 </template>
 
 <script>
 // @ is an alias to /src
-//import HomeTable from "@/components/HomeTable.vue";
+import HomeTable from "@/components/HomeTable.vue";
 import BaseMap from "@/components/BaseMap.vue";
 export default {
-  name: "Home",
-  components: {
-    BaseMap
-  }
+    name: "Home",
+    components: {
+        BaseMap,
+        HomeTable
+    }
 };
 </script>

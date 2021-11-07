@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-bind:style="styleTable">
     <md-table v-model="services" md-sort="name" md-sort-order="asc" md-card>
       <md-table-toolbar>
         <h1 class="md-title">Services</h1>
@@ -46,7 +46,15 @@ export default {
   name: "HomeTable",
   data() {
     return {
-        services:[{},]
+        services:[{},],
+        styleTable: {
+                display: 'inline-block',
+                position: 'absolute',
+                top: '0',
+                bottom: '5%',
+                width: '45%',
+                right: '5%',
+            },
     };
   },
   async mounted() {
