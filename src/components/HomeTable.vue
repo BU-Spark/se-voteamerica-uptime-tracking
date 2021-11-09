@@ -57,7 +57,15 @@ export default {
   name: "HomeTable",
   data() {
     return {
-        services:[{},]
+        services:[{},],
+        styleTable: {
+                display: 'inline-block',
+                position: 'absolute',
+                top: '0',
+                bottom: '5%',
+                width: '45%',
+                right: '5%',
+            },
     };
   },
   methods: {
