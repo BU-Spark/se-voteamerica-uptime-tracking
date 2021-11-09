@@ -15,7 +15,7 @@ export default {
                 position: 'absolute',
                 bottom: '5%',
                 width: '40%',
-                height: '40%',
+                height: '60%',
                 left: '5%',
             },
         };
