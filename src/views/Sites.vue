@@ -1,5 +1,6 @@
 <template>
 <div>
+    <NavBar />
     <HomeTable />
 </div>
 </template>
@@ -7,10 +8,12 @@
 <script>
 // @ is an alias to /src
 import HomeTable from "@/components/HomeTable.vue";
+import NavBar from "@/components/NavBar.vue";
 export default {
-    name: "Sites",
+    name: "Home",
     components: {
-        HomeTable
+        HomeTable,
+        NavBar
     }
 };
 </script>

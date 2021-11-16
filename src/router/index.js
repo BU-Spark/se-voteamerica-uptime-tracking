@@ -5,7 +5,7 @@ Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/",
+    path: "/home",
     name: "Home",
     component: () => import("@/views/Home.vue"),
     meta: {
@@ -13,7 +13,7 @@ const routes = [
     }
   },
   {
-    path: "/sites",
+    path: "/",
     name: "Sites",
     component: () => import("@/views/Sites.vue"),
     meta: {

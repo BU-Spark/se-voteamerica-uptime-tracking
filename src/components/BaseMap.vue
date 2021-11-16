@@ -13,8 +13,8 @@ export default {
             styleMap: {
                 display: 'inline-block',
                 position: 'absolute',
-                bottom: '5%',
-                width: '40%',
+                bottom: '30%',
+                width: '90%',
                 height: '60%',
                 left: '5%',
             },
