@@ -86,6 +86,6 @@ export default {
   }
 
   .md-table {
-    height: 90vh !important;
+    height: 85vh !important;
   }
 </style>

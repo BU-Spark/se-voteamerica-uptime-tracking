@@ -5,8 +5,18 @@
         </div>
         <div class="right-header">
             <button v-on:click="openDonate()" class="header-buttons">Donate</button>
-            <button class="header-buttons">Menu</button>
-        </div>
+            <b-dropdown id="dropdown-right" right text="Menu" class="">
+              <b-dropdown-item href="https://www.voteamerica.com/am-i-registered-to-vote/" target="_blank">Check your registration status</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/voter-registration/" target="_blank">Register to vote</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/absentee-mail-ballot/" target="_blank">Request your mail-in ballot</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/absentee-mail-ballot/" target="_blank">Request your absentee ballot</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/election-reminders/" target="_blank">Sign up for election reminders</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/where-to-vote/" target="_blank">Find out where to vote</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/absentee-mail-ballot-tracker/" target="_blank">Track your absentee or mail ballot</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/provisional-ballot-tracker/" target="_blank">Track your provisional ballot</b-dropdown-item>
+              <b-dropdown-item href="https://www.voteamerica.com/local-election-offices/" target="_blank">Contact your election office</b-dropdown-item>
+            </b-dropdown>
+          </div>
     </div>
 </template>
 <script>
@@ -50,24 +60,46 @@ export default {
     width: 50%;
   }
 
-  .header-buttons {
+  .header-buttons, .btn-secondary {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1em;
     color: #fff;
-    background-color: #343434;
+    background-color: #343434 !important;
     height: 60%;
     margin-left: 1vw;
     margin-top: auto;
     margin-bottom: auto;
-    border-width: 0;
+    border-width: 0 !important;
+    border-color: none !important;
     border-radius: 5px;
-    padding-left: 2%;
-    padding-right: 2%;    
+    padding-left: 20px;
+    padding-right: 20px;    
   }
 
-  .header-buttons:hover {
-    background-color: rgb(225, 40, 20);
+  .header-buttons:hover, .btn-secondary:hover  {
+    background-color: rgb(225, 40, 20) !important;
     cursor: pointer;
+    border-width: 0px !important;
+  }
+
+  .dropdown-menu {
+    background-color: black !important;
+    color: white !important; 
+    width: 20vw;
+  }
+
+  .dropdown-item {
+    background-color: black !important;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  .dropdown-item:hover {
+    background-color: black !important;  
+  }
+
+  a {
+    color: inherit !important;
   }
 </style>
