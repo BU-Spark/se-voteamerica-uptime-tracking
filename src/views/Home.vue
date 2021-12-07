@@ -8,10 +8,6 @@
         </div> 
         <div class="uptime-table">
             <md-table v-model="state_monthly_uptimes" md-sort="name" md-sort-order="asc" md-card>
-                <md-table-toolbar>
-                <h1 class="md-title">States</h1>
-                </md-table-toolbar>
-
                 <md-table-row slot="md-table-row" slot-scope="{ item }">
                     <md-table-cell md-label="State">{{
                         item[0]
