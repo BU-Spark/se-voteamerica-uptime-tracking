@@ -11,12 +11,9 @@ export default {
         return {
             accessToken: 'pk.eyJ1IjoiamFzc3VsYW4iLCJhIjoiY2tyemIxdzVwMThjcjJubjh1Z21ibTI4YyJ9.NEU2B4eedUTXvYNcKEaltg',
             styleMap: {
-                display: 'inline-block',
-                position: 'absolute',
-                bottom: '30%',
-                width: '90%',
-                height: '60%',
-                left: '5%',
+                display: 'flex',
+                width: '100%',
+                height: '100%',
             },
         };
     },
